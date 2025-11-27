@@ -3,8 +3,8 @@ from transformers import pipeline
 import numpy as np
 
 
-clf = pipeline("text-classification", model="command_model", device=-1)
-labels = np.load("command_model/label_names.npy", allow_pickle=True)
+clf = pipeline("text-classification", model="command_model_rubert_X_v2", device=0)
+labels = np.load("command_model_rubert_X_v3/label_names.npy", allow_pickle=True)
 
 
 for i, cmd in enumerate(labels):
