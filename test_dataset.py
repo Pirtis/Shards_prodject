@@ -29,7 +29,7 @@ test_df = pd.read_csv("test_dataset.csv")
 true_labels = test_df['label'].astype('category').cat.codes.values
 texts = test_df['text'].tolist()
 
-# Предсказания модели
+
 pred_labels = predict_batch(texts)
 
 
