@@ -72,7 +72,14 @@ Voice Mode — это инновационная система управлен
 https://steamcommunity.com/sharedfiles/filedetails/?id=3624083869
 ---
 ### ⚙️ Настройки
-
+Мод можно настроить через файл config.py:
+```
+MODEL_PATH = "voice_model/vosk-model-small-ru-0.22"
+SAMPLE_RATE = 16000
+DURATION = 5
+OUTPUT_FILE = "output.txt"
+TRIGGER_KEY = "q"
+```
 Мод можно настроить через файл RunPythonOnChat.xml:
 ```lua
 -- Таблица соответствий: текстовая команда -> OrderPrefab
@@ -138,6 +145,7 @@ Barotrauma-AI-Voice-Mod/
 
 
 *"Да пребудет с вами сила голосовых команд!"* 🎙️⚓
+
 
 
 
